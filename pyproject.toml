@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "solid-bucket"
+version = "0.1.0"
+description = "Утилита командной строки скачивающая содержимое S3 бакета по ключу или префиксу"
+authors = ["mementomorri <mementomorimore@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiobotocore = "^2.12.3"
+aiofiles = "^23.2.1"
+boto3 = "^1.34.41"
+click = "^8.1.7"
+types-aiobotocore = "^2.12.3"
+
+[tool.poetry.group.dev.dependencies]
+aiobotocore = "^2.12.3"
+aiofiles = "^23.2.1"
+boto3 = "^1.34.41"
+click = "^8.1.7"
+types-aiobotocore = "^2.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
